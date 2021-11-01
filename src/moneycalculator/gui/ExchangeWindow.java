@@ -18,8 +18,8 @@ public class ExchangeWindow extends javax.swing.JFrame {
     /**
      * Creates new form GUI
      */
-    public ExchangeWindow(List<Currency> currencies) {
-        this.currencies = currencies;
+    public ExchangeWindow() {
+        this.currencies = loadCurrencies("currencies.txt");
         initComponents();
     }
 
@@ -270,7 +270,7 @@ public class ExchangeWindow extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ExchangeWindow(loadCurrencies("currencies.txt")).setVisible(true);
+                new ExchangeWindow().setVisible(true);
                 
             }
         });
