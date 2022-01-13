@@ -50,7 +50,7 @@ public class ExchangeWindow extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        String[] curr = new String[11];
+        String[] curr = new String[this.currencies.size()];
         for(int i = 0; i <=10; i++){
             curr[i] = this.currencies.get(i).getId().toUpperCase();
         }

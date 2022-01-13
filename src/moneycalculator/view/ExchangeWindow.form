@@ -161,7 +161,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="listaCurrenciesFromActionPerformed"/>
           </Events>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="String[] curr = new String[11];&#xa;for(int i = 0; i &lt;=10; i++){&#xa;    curr[i] = this.currencies.get(i).getId().toUpperCase();&#xa;}"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="String[] curr = new String[this.currencies.size()];&#xa;for(int i = 0; i &lt;=10; i++){&#xa;    curr[i] = this.currencies.get(i).getId().toUpperCase();&#xa;}"/>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
